@@ -1,0 +1,21 @@
+image: python:3.8-slim
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_process:
+  stage: build
+  script:
+    - echo "Executando processo de construção..."
+
+test_process:
+  stage: test
+  script:
+    - echo "Executando testes..."
+
+deploy_process:
+  stage: deploy
+  script:
+    - echo "Executando processo de deploy..."
